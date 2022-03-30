@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="ui-design-daily-favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Filter Modal</title>
+</head>
+<body>
+    <main class="dialog">
+        <nav>
+            <h1>Filter</h1>
+            <img class="pointer" src="close.svg" alt="Close" />
+        </nav>
+        <form>
+            <div class="search-wrapper">
+                <label for="search-input">Search By Keyword</label>
+                <img class="magnify pointer" src="magnify.svg" alt="" />
+                <input id="search-input" class="search" type="text" name="search" placeholder="Search jobs" />
+            </div>
+            
+            <fieldset>
+                <legend>View</legend>
+                <input type="radio" id="all" class="pointer" name="job-filter" value="All job posts" required>           
+                <label for="all">All job posts</label><br>
+                <input type="radio" id="archive" class="pointer" name="job-filter" value="Archive job posts">
+                <label for="archive">Archive job posts</label><br>
+                <input type="radio" id="archived" class="pointer" name="job-filter" value="Archived job posts" checked>
+                <label for="archived">Archived job posts</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Include</legend>
+                <input id="shared" type="checkbox" name="shared" value="Jobs shared with me" checked />
+                <label class="shared-label" for="shared">Jobs shared with me</label>
+            </fieldset>
+            <br />
+            <br />
+            <button class="pointer">Save changes</button>
+        </form>
+    </main>
+</body>
+</html>

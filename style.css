@@ -1,0 +1,251 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+button {
+    background: #FFBB56;
+    border: none;
+    color: #403546;
+    width: 200px;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bolder;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+}
+
+.dialog {
+    width: 90vw;
+    height: 55vh;
+    background: #322e59;
+    color: #bcbacf;
+    padding: 50px;
+    border-radius: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow:-40px -40px 8px #1B183C; /*#1b183b;*/
+}
+
+body {
+    background: #232044;
+    position: relative;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.search-wrapper {
+    position: relative;
+    margin-block: 20px;
+}
+
+.search {
+    text-indent: 24px;
+    background:#232044;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 200px;
+    color: #bcbacf;
+}
+
+.magnify {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    text-transform: uppercase;
+    color: #b8b6cb;
+}
+
+::placeholder {
+    color: #bcbacf;
+}
+
+/* Custom Radio */
+
+input[type="radio"]{
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+input[type="radio"] + label::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -32px;
+  width: 24px;
+  height: 24px;
+  background: #232044;
+  border-radius: 50%;
+  border: 1px solid #bcbacf;
+}
+
+input[type="radio"] + label::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -29px;
+  top: 3px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
+
+input[type="radio"]:checked + label::after {
+  background: #bcbacf;
+}
+
+input[type="radio"]:focus + label::before {
+  outline: 1px solid #fff;
+}
+
+/* Custom Checkbox */
+
+input[type="checkbox"]{
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  margin-left: 2rem;
+}
+
+input[type="checkbox"] + label::before {
+  content: '';
+  left: -32px;
+  position: absolute;
+  background: #232044;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background: #bcbacf;
+  content: '\2714';
+  color: #1B183C;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:focus + label::before {
+  outline: 2px solid #fff;
+}
+
+@media (min-width: 400px){
+  .dialog {
+    width: 75vw;
+  }
+}
+
+@media (min-width: 700px){
+  .dialog {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 1000px){
+  .dialog {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 1400px){
+    .dialog {
+        width: 25vw;
+        height: 75vh;
+    }
+
+    button {
+        width: 275px;
+    }
+
+    .search {
+        width: initial;
+    }
+}
