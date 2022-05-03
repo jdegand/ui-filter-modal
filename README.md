@@ -10,6 +10,8 @@ UI Design Daily design translated to real code.  I was going to make a central r
 
 Design is responsive but not totally perfect.  
 
+UI Design Daily website has been down for a while (March - April 22) and the web archive capture of this page does not have the design image.  
+
 ## Useful Resources
 
 - [FaviconGrabber](https://favicongrabber.com)
