@@ -12,6 +12,8 @@ Design is responsive but not totally perfect.
 
 UI Design Daily website has been down for a while (March - April 22) and the web archive capture of this page does not have the design image.  
 
+[Filter Modal Design](https://dribbble.com/shots/17694430-Filter-Modal-UI-Design) can be found on dribble along with [all other ui design daily designs](https://dribbble.com/ildiesign).  The UI Design Daily domain is abandoned.  
+
 ## Useful Resources
 
 - [FaviconGrabber](https://favicongrabber.com)
