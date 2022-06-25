@@ -10,9 +10,9 @@ UI Design Daily design translated to real code.  I was going to make a central r
 
 Design is responsive but not totally perfect.  
 
-UI Design Daily website has been down for a while (March - April 22) and the web archive capture of this page does not have the design image.  
+UI Design Daily website was down for a while (Feb - March 22).  Design can be found [here](https://www.uidesigndaily.com/posts/figma-filter-modal-day-1569).
 
-[Filter Modal Design](https://dribbble.com/shots/17694430-Filter-Modal-UI-Design) can be found on dribble along with [all other ui design daily designs](https://dribbble.com/ildiesign).  The UI Design Daily domain is abandoned.  
+[Filter Modal Design](https://dribbble.com/shots/17694430-Filter-Modal-UI-Design) can be found on dribble along with [all other ui design daily designs](https://dribbble.com/ildiesign).
 
 ## Useful Resources
 
